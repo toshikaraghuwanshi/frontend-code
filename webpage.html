@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- meta tags for media queries -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+ @font-face {
+        font-family: 'OpenSans Bold';
+            src: url('../opensans/Open_Sans/OpenSans-Bold.ttf')  format('truetype'); 
+        }
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header-container,
+.footer-container{
+  width: 1074px;
+  margin: 0px auto;
+}
+
+select {
+  margin: 26px 2px 18px 56px;
+  font-family:"OpenSans Bold";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #575757;
+  outline: none;
+  border: none;
+}
+.span-offers{
+
+  margin: 26px 2px 18px 56px;
+  font-family:"OpenSans Bold";
+  color: #575757;
+}
+.search-container{
+  margin: 42px 18px 34px 17px;
+  display: inline-block;
+  float: right;
+  
+}
+.search-container a{
+  text-decoration: none;
+  border-left: 1px solid skyblue;
+  padding: 9px 17px;
+
+}
+p{
+  width: calc(100% - 40px);
+  height: 18px;
+  text-align: center;
+  padding: 8px 0 10px;
+  background-color: #d7b37f;
+}
+.text{
+  width: 100%;
+  height: 40px;
+  font-family: "OpenSans Bold";
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  display: block;
+  padding:50px 0 30px;
+}
+.long-text{
+  text-align: center;
+  display: block;
+}
+.dog-container{
+  text-align: center;
+  padding-top: 24px;
+}
+.bg-gray {
+    background-color: #333;
+}
+a.label{
+    display: inline-block;
+    color: #d7b37f;
+    font-family: "OpenSans Bold";
+    padding-top: 21px;
+}
+ul{
+  color:#dddddd;
+  margin-top: 21px;
+  line-height: 1.5;
+}
+.social-container li{
+    float:left; 
+    width: 60%;
+}
+.trademarks{
+    margin: auto;
+    border-top: 1px solid #dddddd;
+    font-size: 12px;
+    color: #dddddd;
+    width:100%;
+    float: left;
+    padding-top: 20px;
+    margin-top: 36px;
+    margin-bottom: 24px;
+    
+}
+.container{
+    float: left;
+    width: 20%;
+}
+
+/* for mobile view */
+@media screen and (max-width: 768px) {
+  .header-container,
+  .footer-container{
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    margin: 0px auto;
+  }
+  .header-container .span-offers,
+  .header-container select {
+    display: none;
+  }
+  .social-container {
+    float: left;
+    width: 100%;
+  }
+  .footer-container .container {
+    width: 50%;
+  }
+}
+/* for mobile view */
+
+@media screen and (max-width: 480px) {
+    .bg-gray {
+        display: none;
+    }
+}
+
+    </style>
+</head>
+    <body>
+        <div class="header-container clearfix">
+            <a href="">
+                <img src="./vetdirect.png" alt="VetDirect" width="169" height="64"/>
+            </a>
+            <select>
+                <option value="shop dog"selected>Shop Dog</option>
+            </select>
+            <select>
+                <option value="shop cat"selected>Shop Cat</option>
+            </select>
+            <select>
+                <option value="about us"selected>About Us</option>
+            </select>
+            <span class="span-offers">Offers</span>
+          <div class="search-container">
+              <a href="">
+              <img src="./search@3x.png"alt="" width="16.7" height="16.7"/>
+            </a>
+            <a href="">
+              <img src="./profile.png"alt="" width="29" height="20"/>
+            </a>
+            <a href="">
+              <img src="./Basket.png"alt="" width="29" height="16.7"/>
+            </a>
+          </div>
+        </div>
+        <p>Free shipping on all orders. See all offers</p>
+          <span class="text">Nothing Here</span>
+          <span class="long-text">The requested URL /asd was not found on this server. Error 404.</span>
+      <div class="dog-container">
+          <a href="">
+            <img src="./dog.png" alt="VetDirect" width="360" height="449"/>
+        </a>
+      </div>
+      <!-- footer start -->
+      <div class="bg-gray">
+        <div class="footer-container clearfix">
+          <div class="container">
+            <a class="label">About Vet Direct</a>  
+            <ul>
+                <li>Pro Plan Nutrition</li>
+                <li>Purina.com.au</li>
+                <li>Terms and Conditions</li>
+                <li>Nestle Privacy Policy</li>
+                <li>Cookie usage</li>
+            </ul>
+        </div>
+        <div class="container">
+          <a class="label">Help</a>  
+          <ul>
+              <li>FAQs</li>
+              <li>Contact us</li>
+      </div>
+      <div class="social-container">
+        <a class="label">We are Social</a> 
+        <ul>
+            <li>
+              <a href="" class="social">
+              <img src="./fbinsttwi.png" alt="" width="70" height="20" />
+              </a>
+            </li>
+          </ul>
+      </div>
+    <span class="trademarks">© All trademarks are owned by Societe des Produits Nestle S.A., or used with permission.</span>
+        </div>
+      </div>
+    </body>
+</html>

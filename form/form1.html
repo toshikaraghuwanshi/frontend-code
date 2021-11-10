@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- meta tags for media queries -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- meta tags for media queries -->
+<style>
+    @font-face {
+        font-family: 'Poppins Bold';
+            src: url('../fonts/Poppins/Poppins-Bold.ttf')  format('truetype'); 
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+            src: url('../fonts/Poppins/Poppins-Regular.ttf')  format('truetype'); 
+        }
+
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.footer-container{
+  width: 1147px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 46px 0 35px; 
+ 
+}
+
+a.label{
+    font-family:'Poppins Bold';
+    font-size: 20px;
+}
+a{
+  font-size: 13px;
+  line-height: 2.0;
+  color:aliceblue;
+  font-family: 'Poppins';
+  display:inline-block;
+  text-decoration: none;
+  border-bottom: 2px solid#222327;
+  display:inline;
+}
+a:hover {
+    border-bottom: 2px solid red;
+}
+
+.bg-gray {
+    background-color: #222327!important;
+}
+img{
+   color:  #3b3c40;
+   font-size: 16px;
+}
+.container{
+    float: left;
+    width: 20%;
+}
+a.label.label-block {
+    display: inline-block;
+}
+.phone-container{
+    float:right;
+}
+.phone-container a{
+    font-size: 28px;
+    line-height: 40px;
+}
+.footer-top a {
+    float: left;
+}
+.last-container li {
+    float:left;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.social-container li{
+    margin-right: 15px;
+    margin-top: 39px; 
+    float:left; 
+}
+.social-container a:hover{
+    border-bottom: 0px;
+}
+.last-container ul,
+.social-container ul  {
+    width: 100%;
+}
+span{
+    font-size: 12px;
+    line-height: 20px;
+    color: #929596!important;
+    font-weight: 400;
+}
+
+
+/* for ipad view */
+@media screen and (max-width: 768px) {
+  .footer-container{
+      width:100%;
+     padding: 46px 0 35px; 
+}
+.phone-container a{
+    float:right;
+}
+
+  .footer-container .a.label.label-block {
+    display: inline-block;
+    
+}
+.newstores-container{
+    clear:left;
+}
+.heading-container{
+    clear:right;
+    width: 50%;
+}
+  .social-container {
+    float: left;
+    width: 100%;
+  }
+  .footer-container .container {
+    width: 25%;
+  }
+}
+/* for ipad view */
+
+
+/* for mobile view*/
+@media screen and (max-width: 450px) {
+    .corporate-container,
+    .heading-container {
+        clear: left;
+    }
+    .newstores-container{
+        clear:none;
+    }
+    .footer-container .container {
+        width: 50%;
+    }
+    .footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: calc(100% - 40px);
+    }
+    .footer-top img {
+        width: 159px;
+    }
+    .phone-container a {
+        font-size: 20px;
+    }
+}
+/*for mobile view*/
+
+</style>
+</head>
+<body>
+    <div class="bg-gray">
+        <div class="footer-container clearfix">
+            <div class="footer-top clearfix">
+                <a href="">
+                    <img src="./images/footer-logo.png" alt="bridgestone" width="193" height="23"/>
+                </a>
+                <div class="phone-container">
+                    <a href="1300 094 889">1300 094 889</a>
+                </div>
+            </div>   
+            <div class="container">
+                <a class="label" title="tyres" href="Tyres">Tyres</a>  
+            
+                <ul>
+                    <li><a href="">Find a tyre</a></li>
+                    <li><a href="">Bridgestone</a></li>
+                    <li><a href="">Other Brands</a></li>
+                    <li><a href="">Categories</a></li>
+                    <li><a href="">Offers</a></li>
+                    <li><a href="">Commercial Tyres</a></li>
+                    <li><a href="">Bandage Retreads</a></li>
+                    <li><a href="">Tyre warranties</a/li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <a class="label" title="services" href="services">Services</a>  
+            
+                <ul>
+                    <li><a href="">Logbook Services</a></li>
+                    <li><a href="">Brakes</a></li>
+                    <li><a href="">Mechanical Servicing</a></li>
+                    <li><a href="">Safety Checks</a></li>
+                    <li><a href="">Suspension</a></li>
+                    <li><a href="">Wheel Alignment</a></li>
+                    <li><a href="">Fleet Services</a></li>
+                </ul>
+            </div>
+
+            <div class="container corporate-container">
+                <a class="label" title="corporate" href="corporate">Corporate</a>  
+                <ul>
+                    <li><a href="">Why Bridgestone Tyres</a></li>
+                    <li><a href="">Australia's Most Trusted Tyre</a></li>
+                    <li><a href="">Sustainability</a></li>
+                    <li><a href="">Our Way to Serve</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Newsroom</a></li>
+                </ul>
+            </div>
+
+            <div class="container newstores-container">
+                <a class="label" title="new stores" href="new stores">New stores</a>  
+            
+                <ul>
+                    <li><a href="">Bridgestone Select Cardiff - Coming soon</a></li>
+                    <li><a href="">Bridgestone Select Truganina - Now Open</a></li>
+                </ul>
+            </div>  
+            <div class="container heading-container">
+                <a class="label label-block" title="Find a store" href="Find a store">Find a store</a>  
+                <a class="label label-block" title="contact us" href="contact us">Contact Us</a> 
+                <a class="label label-block" title="contact store" href="contact store">Contact Store</a>  
+                <a class="label label-block" title="sitemap" href="sitemap">Sitemap</a> 
+            </div>
+            <div class="social-container">
+                <ul class="clearfix">
+                    <li>
+                        <a href="https://www.facebook.com/BridgestoneAU" class="social">
+                            <img src="./images/fb.svg" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/BridgestoneAustralia" class="social">
+                            <img src="./images/youtube.svg" alt=/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/bridgestone-australia/?originalSubdomain=au" class="social">
+                            <img src="./images/link.svg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="last-container">
+                <ul class="clearfix">
+                    <li><a href="">Terms of use</a></li>
+                    <li><a href="">Terms of sale</a></li>
+                    <li><a href="">Purchasing terms</a></li>
+                    <li><a href="">Disclaimers</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Refund and Cancellatiion</a></li>
+                    <li><a href="">Unsubscribe</a></li>
+                </ul>
+                <span class="® 2021 Bridgestone Australia Limited. All Rights Reserved.">® 2021 Bridgestone Australia Limited. All Rights Reserved.</span>
+            </div>
+    </div>
+</div>
+
+</body>
+</html>
+  

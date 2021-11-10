@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+
+<h2>Understanding Hover in CSS</h1>
+<style>
+    button:hover {
+        background-color: red;
+    }
+</style>
+<button>color me red on hover</button>
+
+
+
+<h2>
+    Hover parent and change child color to red
+</h2>
+<style>
+.main {
+    background-color: peachpuff;
+}
+
+.child1 {
+    background-color: powderblue;
+}
+
+.child2 {
+    background-color: rosybrown;
+}
+.child3 {
+    background-color: slategray;
+}
+
+.main:hover .child2{
+    background-color: red;
+}
+</style>
+<div class="main">
+    Color one of my children red on my hover
+    <div class="child1">Child 1</div>
+    <div class="child2">Child 2</div>
+    <div class="child3">Child 3</div>
+</div>
+
+
+
+
+<style>
+    .about ul {
+        display: none;
+    }
+
+    .about:hover ul {
+        display: block;
+    }
+</style>
+<div class="about">
+    <button>About</button>
+    <ul>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Our Company</a></li>
+        <li><a href="#">Our Mission</a></li>
+        <li><a href="#">Careers</a></li>
+    </ul>
+</div>
+</body>
+</html>

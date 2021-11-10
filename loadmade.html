@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <style>
+
+        @font-face {
+        font-family: 'Poppins Bold';
+            src: url('./fonts/Poppins/Poppins-Bold.ttf')  format('truetype'); 
+        }
+
+        @font-face {
+        font-family: 'Poppins';
+            src: url('./fonts/Poppins/Poppins-Regular.ttf')  format('truetype'); 
+        }
+
+        body {
+            font-family: "Poppins";
+            background-color: #3b3c40;
+        }
+        img {
+            float: right;
+        
+        }
+        .container {
+            width: 416px;
+            background-color: white;
+            padding: 40px 24px;
+        }
+
+        h2 {
+            font-family: "Poppins Bold";
+            color: #000000;
+            font-size: 28px;
+            text-align: center;
+            letter-spacing: -1px;
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 15px;
+            color: #000000;
+            letter-spacing: -0.03px;
+            margin-bottom: 24px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        input {
+            width: calc(100% - 30px);
+            border: 1px solid #d5d5d5;
+            box-shadow: none;
+            outline: none;
+            padding: 15px;
+            color: #929596;
+            font-size: 13px;
+            margin-bottom: 32px; 
+        }
+        .aestrick {
+            color: #e80000;
+        }
+        .amount {
+            font-weight: bold;
+            color: #3b3c40;
+            letter-spacing: -0.18px;
+            margin-bottom: 32px;
+            display: inline-block;
+        }
+        .value {
+            color: #5f6263;
+            letter-spacing: -0.18px;
+
+        }
+        .cancel-btn {
+            color: #e80000;
+            border: 2px solid #e80000;
+            background-color: white;
+            width: 128px;
+            height: 48px;
+            font-size: 15px;
+            font-family: "Poppins Bold";
+            margin-right: 20px;
+            margin-left: 68px;
+            
+        }
+        .save-btn {
+            color: white;
+            border: 2px solid #e80000;
+            background-color: #e80000;
+            width: 128px;
+            height: 48px;
+            font-size: 15px;
+            font-family: "Poppins Bold";
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./cross.png" alt="close" title="close" width="24" height="25" />
+        <h2>Load Made Sale</h2>
+        <p>Ensure all sale details are updated correctly for accurate of payment  of eCommerce site</p>
+        <label for="Invoice number *">Invoice number <span class="aestrick">*</span></label>
+        <input type="text" placeholder="Enter invoice number" id="invoice" name="invoice" />
+        <p>
+            <span class="amount">Amount:</span>
+            <span class="value">
+                $619.00
+            </span>
+        </p>
+        <button class="cancel-btn">Cancel</button>
+        <button class="save-btn">Save</button>
+    </div>
+
+</body>
+</html>

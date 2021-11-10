@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+<style>
+.bg-white{
+    width: 730px;
+    background-color: whitesmoke;
+    }
+ .tooltip-container{
+     background:whitesmoke;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     position: relative;
+     display: inline-block;
+ }
+.box{
+    padding: 15px 25px ;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: dimgray;
+    border: 1px solid white;
+    color: white;
+} 
+
+.tooltip {
+    position: absolute;
+    top: -6px;
+    z-index: 999;
+    background: black;
+    color: #fff;
+    padding: 5px 9px;
+    border-radius: 5px;
+    left: 24px;
+    display: none;
+}
+
+.tooltip::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid black;
+    position: absolute;
+    top: 28px;
+    left: 53px;
+}
+
+ /* .tooltip-container:hover .tooltip { */
+     /* display: block;  */
+/* }  
+
+/*  bottom-tooltip start  */ 
+.box1{
+     background:whitesmoke;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     position: relative;
+     display: inline-block;
+ }
+ .box-bottom{
+    padding: 15px;
+    margin-left: 18px;
+    cursor: pointer;
+    background-color: dimgray;
+    border: 1px solid white;
+    color: white;
+} 
+.tooltip-bottom {
+   
+    position: absolute;
+    top: 85px;
+    background: black;
+    color: #fff;
+    padding: 5px 9px;
+    border-radius: 5px;
+    left: 24px;
+    display: none;
+}
+
+.tooltip-bottom::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    bottom: 28px;
+    left: 53px;
+}
+
+  .tooltip-container:hover .tooltip { 
+    display: block; 
+}  
+/* bottom-tooltip end  */
+/* left-tooltip start  */
+.box2{
+     background:whitesmoke;
+     display: inline-block;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     position: relative;
+ }
+ .box-left{
+    padding: 15px 25px;
+    margin-left: 13px;
+    cursor: pointer;
+    background-color: dimgray;
+    border: 1px solid white;
+    color: white;
+} 
+.tooltip-left {
+   
+    position: absolute;
+    top: 40px;
+    background: black;
+    color: #fff;
+    padding: 5px 9px;
+    border-radius: 5px;
+    left: -103px;
+    display: none;
+}
+
+.tooltip-left::after {
+    content: "";
+    position: absolute;
+    left: 108px;
+    bottom: 10px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid black;
+    border-bottom: 5px solid transparent;
+}
+
+  .tooltip-container:hover .tooltip { 
+     display: block;  
+ }  
+/* left-tooltip end*/
+
+/* last-tooltip start*/
+.box3{
+     background:whitesmoke;
+     display: inline-block;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     position: relative;
+ }
+ .box-right{
+    padding: 15px 25px;
+    margin-left: 13px;
+    cursor: pointer;
+    background-color: dimgray;
+    border: 1px solid white;
+    color: white;
+} 
+.tooltip-right {
+   
+    position: absolute;
+    top: 40px;
+    background: black;
+    color: #fff;
+    padding: 5px 9px;
+    border-radius: 5px;
+    right: -116px;
+    display: none;
+}
+
+.tooltip-right::after {
+    content: "";
+    border-left: 32px solid transparent;
+    position: absolute;
+    left: -42px;
+    bottom: 10px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 10px solid black;
+    border-bottom: 5px solid transparent;
+}
+
+  .tooltip-container:hover .tooltip { 
+     display: block;  
+ }  
+/* last-tooltip end*/
+
+
+</style>
+</head>
+<body>
+<div class="bg-white">
+    <div class="tooltip-container">
+        <button class="box" >Tooltip on Top</button>
+        <div class="tooltip">Hi, I'm tooltip</div>
+    </div>
+
+
+    <div class="box1">
+        <button class="box-bottom" >Tooltip on Bottom</button>
+        <div class="tooltip-bottom">Hi, I'm tooltip</div>
+    </div>
+
+
+    <div class="box2">
+        <button class="box-left" >Tooltip on left</button>
+        <div class="tooltip-left">Hi, I'm tooltip</div>
+    </div>
+
+
+    <div class="box3">
+        <button class="box-right" >Tooltip on right</button>
+        <div class="tooltip-right">Hi, I'm tooltip</div>
+    </div> 
+</div>
+
+    <script>
+        const box = document.getElementsByClassName("box")[0];
+        box.addEventListener("mouseenter", function(event) {
+            document.getElementsByClassName("tooltip")[0].style.display = "block";
+        });
+
+        box.addEventListener("mouseleave", function(event) {
+            document.getElementsByClassName("tooltip")[0].style.display = "none";
+        });
+
+        
+
+        const box1 = document.getElementsByClassName("box-bottom")[0];
+        box1.addEventListener("mouseenter", function(event) {
+            document.getElementsByClassName("tooltip-bottom")[0].style.display = "block";
+        });
+
+        box1.addEventListener("mouseleave", function(event) {
+            document.getElementsByClassName("tooltip-bottom")[0].style.display = "none";
+        });
+
+
+         const box2 = document.getElementsByClassName("box-left")[0];
+         box2.addEventListener("mouseenter", function(event) {
+             document.getElementsByClassName("tooltip-left")[0].style.display = "block";
+        });
+
+         box2.addEventListener("mouseleave", function(event) {
+            document.getElementsByClassName("tooltip-left")[0].style.display = "none";
+         });
+
+
+        const box3 = document.getElementsByClassName("box-right")[0];
+        box3.addEventListener("mouseenter", function(event) {
+            document.getElementsByClassName("tooltip-right")[0].style.display = "block";
+        });
+
+        box3.addEventListener("mouseleave", function(event) {
+            document.getElementsByClassName("tooltip-right")[0].style.display = "none";
+        });
+
+    </script>
+</body>
+</html>
